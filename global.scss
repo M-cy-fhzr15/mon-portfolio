@@ -111,6 +111,7 @@ body {
     flex-wrap: wrap;
     gap: 20px; 
     justify-content: center;
+    margin-top: 100px;
       
     .skill {
       width: 300px;
@@ -146,7 +147,7 @@ body {
       
          .progress-bar {
             height: 100%;
-            background-color:$color-bar ;
+            background:linear-gradient(to right,$color-bar) ;
             text-align: right;
             line-height: 20px;
             color: white;
@@ -160,3 +161,33 @@ body {
       }
     }
   }
+  .form-container {
+    width: 800px; 
+    margin-left: 90px;
+  }
+  .contact-form{
+    width:$navbar-width+200;
+    margin-left: $navbar-width +20;
+& label {
+    display: block;
+    margin: 10px 0 5px;
+}
+& input,
+& textarea {
+    width: 800px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+& button {
+    padding: 10px 20px;
+    background-color: #08305c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+}
+
+
+
+

@@ -42,3 +42,51 @@
       font-size: 0.8rem;
     }
   }
+
+.contact-form{
+  @include responsive('small'){
+  width:$navbar-width -300;
+  margin-left: $navbar-width - 300;
+  & label {
+    display: block;
+    margin: 10px 0 5px;
+}
+& input,
+& textarea {
+    width: 100px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+  }
+  @include responsive('medium'){
+    width:$navbar-width;
+    margin-left: $navbar-width - 300 ;
+    & label {
+      display: block;
+      margin: 10px 0 5px;
+  }
+  & input,
+  & textarea {
+      width: 500px;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+  }
+  }
+  @include responsive('large'){
+    width:$navbar-width;
+    margin-left: $navbar-width - 300;
+    & label {
+      display: block;
+      margin: 10px 0 5px;
+  }
+  & input,
+  & textarea {
+      width: 800px;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+  }
+  }
+}
