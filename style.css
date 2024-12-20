@@ -95,9 +95,6 @@ body {
   width: 100%;
   height: auto;
 }
-.plans .box-projet h2 {
-  color: #333;
-}
 .plans .box-projet p {
   color: rgb(52, 0, 242);
   font-size: 1.2rem;
@@ -153,9 +150,8 @@ body {
   opacity: 1;
 }
 
-.form-container {
-  width: 800px;
-  margin-left: 90px;
+.form-container h1 {
+  text-align: center;
 }
 
 .contact-form {

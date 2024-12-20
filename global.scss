@@ -94,10 +94,7 @@ body {
       & img {
         width: 100%;
         height: auto;
-      }
-     & h2 {
-        color: #333;
-      }    
+      }   
       & p {
         color: rgb(52, 0, 242);
         font-size: 1.2rem;
@@ -161,10 +158,10 @@ body {
       }
     }
   }
-  .form-container {
-    width: 800px; 
-    margin-left: 90px;
-  }
+  .form-container h1 {
+    text-align: center;
+   }
+  
   .contact-form{
     width:$navbar-width+200;
     margin-left: $navbar-width +20;
