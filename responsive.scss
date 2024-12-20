@@ -1,0 +1,44 @@
+@import 'mixin.scss'; 
+
+.navbar {
+    width: $navbar-width;
+  
+    @include responsive('small') {
+      width: 70px;
+  
+      .navlinks ul li a {
+        font-size: 12px;
+        padding: 5px;
+      }
+  
+      .pdp img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+  
+  .containt {
+    margin-left: $navbar-width+20;
+  
+    @include responsive('small') {
+      margin-left: 80px;
+      padding: 10px;
+    }
+  }
+  
+  h1 {
+    font-size: 2rem;
+  
+    @include responsive('small') {
+      font-size: 1.5rem;
+    }
+  }
+  
+  p {
+    font-size: 1.2rem;
+  @include responsive('small')
+     {
+      font-size: 0.8rem;
+    }
+  }
