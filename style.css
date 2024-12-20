@@ -109,6 +109,7 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-top: 100px;
 }
 .skills-container .skill {
   width: 300px;
@@ -128,7 +129,7 @@ body {
   transition: color 0.3s ease;
 }
 .skills-container .skill .skill-title:hover i {
-  color: #09D1C7;
+  color: #cd5e5a, #AEFFAE, #1BFFF3;
   transform: scale(1.2);
 }
 .skills-container .skill .progress-bar-container {
@@ -141,7 +142,7 @@ body {
 }
 .skills-container .skill .progress-bar-container .progress-bar {
   height: 100%;
-  background-color: #09D1C7;
+  background: linear-gradient(to right, #cd5e5a, #AEFFAE, #1BFFF3);
   text-align: right;
   line-height: 20px;
   color: white;
@@ -150,6 +151,33 @@ body {
 }
 .skills-container .skill:hover .progress-bar-container {
   opacity: 1;
+}
+
+.form-container {
+  width: 800px;
+  margin-left: 90px;
+}
+
+.contact-form {
+  width: 433px;
+  margin-left: 253px;
+}
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+.contact-form input, .contact-form textarea {
+  width: 800px;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #08305c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .navbar {
@@ -194,6 +222,55 @@ p {
 @media (max-width: 768px) {
   p {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 233px -300;
+    margin-left: -67px;
+  }
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1024px) {
+  .contact-form {
+    width: 233px;
+    margin-left: -67px;
+  }
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 500px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1200px) {
+  .contact-form {
+    width: 233px;
+    margin-left: -67px;
+  }
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 800px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
   }
 }
 
